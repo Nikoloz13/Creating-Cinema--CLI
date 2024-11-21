@@ -31,7 +31,8 @@ def search_movie():
             print(f"\tRoom length: {session['room_length']}")
             print(f"\tRoom width: {session['room_width']}")
             print(f"\tCapacity: {session['capacity']}")
-        print("We have no session on this film, sorry! ")
+        else:    
+            print("We have no session on this film, sorry! ")
         
 
 
@@ -39,7 +40,6 @@ def list_sessions():
     print("Listing sessions")
     if sessions == []:
         print("There is no sessions!!!")
-    print()    
     for session in sessions:
         print(f"Session ID: {session['session_id']}")
         print(f"\tFilm name: {session['film_name']}")
@@ -48,7 +48,7 @@ def list_sessions():
         print(f"\tRoom length: {session['room_length']}")
         print(f"\tRoom width: {session['room_width']}")
         print(f"\tCapacity: {session['capacity']}")
-    print("We have no session on this film, sorry!") 
+    
 
 
 def user_panel():
@@ -71,4 +71,4 @@ def user_panel():
                 print("GoodBye!")
                 exit()
             case _:
-                print("Invalid Input")   
+                print("Invalid Input")  

@@ -43,7 +43,7 @@ def list_sessions():
     if sessions == []:
         print("There is no sessions!!!")
     for session in sessions:
-        print(f"\tSession ID: {session['session_id']}")
+        print(f"Session ID: {session['session_id']}")
         print(f"\tFilm name: {session['film_name']}")
         print(f"\tStart time: {session['start_time']}")
         print(f"\tRoom number: {session['room_number']}")
@@ -116,4 +116,4 @@ def admin_loop():
                 print("GoodBye!")
                 exit()
             case _:
-                print("Invalid Input")    
+                print("Invalid Input")
